@@ -79,6 +79,7 @@ header img {
   align-items: center;
 }
 .header-title h1 {
+  max-width: 90vw;
   text-align: center;
   font-size: 4rem;
   font-weight: 900;
@@ -87,6 +88,7 @@ header img {
 }
 
 .header-title p {
+  max-width: 90vw;
   text-align: center;
   color: var(--slate-600);
   font-size: 1rem;
@@ -157,6 +159,7 @@ header img {
   text-align: center;
 }
 .text p {
+  max-width: 450px;
   color: var(--slate-600);
   font-size: 1rem;
   line-height: 150%;

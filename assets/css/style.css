@@ -181,13 +181,11 @@ header img {
 .section-3 {
   position: relative;
   width: 100vw;
-  min-height: 50vh;
+  min-height: auto;
   background-image: url("../../assets/desktop/image-footer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
-  padding: 120px 20px 160px; /* top padding to create space for circle */
   text-align: center;
   color: white;
 }

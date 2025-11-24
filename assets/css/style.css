@@ -181,7 +181,7 @@ header img {
 .section-3 {
   position: relative;
   width: 100vw;
-  height: 50vh;
+  min-height: 50vh;
   background-image: url("../../assets/desktop/image-footer.jpg");
   background-repeat: no-repeat;
   background-size: cover;

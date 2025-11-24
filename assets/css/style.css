@@ -4,8 +4,10 @@
   font-size: 16px;
   --cyan-600: #4d96a9;
   --cyan-300: #8fe3f9;
+  --cyan-300f: #4dc9e8;
   --purple-600: #855fb1;
   --purple-300: #d9b8ff;
+  --purple-300f: #c796ff;
   --slate-900: #28283d;
   --slate-600: #87879d;
   --slate-300: #d1d1df;
@@ -19,18 +21,26 @@
 .btn-1 {
   background-color: var(--cyan-600);
   color: var(--white);
+  width: 10rem;
 }
 
 .btn-1 small {
-  color: var(--cyan-300);
+  color: var(--cyan-300f);
 }
 
+.btn-1:hover {
+  background-color: var(--cyan-300);
+}
 .btn-2 {
   background-color: var(--purple-600);
   color: var(--white);
+  width: 8rem;
+}
+.btn-2:hover {
+  background-color: var(--purple-300);
 }
 body {
-  font-family: "Red Hat Display";
+  font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
 }
 
 .main {
@@ -39,6 +49,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 10rem;
+  overflow-x: hidden;
 }
 .hero-left,
 .hero-right {
@@ -69,17 +80,21 @@ header img {
 }
 .header-title h1 {
   text-align: center;
-  font-size: 2.2rem;
-  font-weight: 800;
+  font-size: 2.5rem;
+  font-weight: 900;
   color: var(--slate-900);
 }
 
 .header-title p {
   color: var(--slate-600);
+  font-size: 1.2rem;
 }
 .section-one {
+  width: 90%;
+  max-width: 1400px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   gap: 0.8rem;
   min-height: auto;
@@ -96,7 +111,6 @@ header img {
 .btn button {
   border: none;
   border-radius: 30px;
-  width: 10rem;
   height: 3rem;
   padding: 5px 10px;
   font-weight: 700;
@@ -107,24 +121,29 @@ header img {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: auto;
   margin: auto;
   gap: 1rem;
 }
 
 .section-2 h3 {
-  color: var(--cyan-300);
+  color: var(--cyan-600);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 .section-2 h2 {
   color: var(--slate-900);
+  font-size: 2.2rem;
+  font-weight: 900;
 }
 .section-2 h3,
 .section-2 h2 {
   text-align: center;
 }
 .text {
-  max-width: 600px;
+  max-width: 500px;
   width: 90vw;
   padding: 1rem;
   display: flex;
@@ -135,6 +154,7 @@ header img {
 }
 .text p {
   color: var(--slate-600);
+  font-size: 1.2rem;
 }
 .number {
   position: relative;
@@ -154,7 +174,7 @@ header img {
 .number::before {
   content: "";
   position: absolute;
-  top: -120px; /* length of the line */
+  top: -120px;
   left: 50%;
   transform: translateX(-50%);
   width: 2px;
@@ -177,7 +197,6 @@ header img {
   max-width: 15rem;
 }
 
-/* Main blue section */
 .section-3 {
   position: relative;
   width: 100vw;
@@ -192,7 +211,7 @@ header img {
 
 .section-3 > * {
   position: relative;
-  z-index: 2; /* content ABOVE overlay */
+  z-index: 2;
 }
 .section-3::before {
   position: absolute;
@@ -201,11 +220,10 @@ header img {
   inset: 0;
   z-index: 0;
 }
-/* The circle with number */
 
 .step-marker {
   position: absolute;
-  top: -40px; /* Moves the circle upward so it overlaps */
+  top: -40px;
   left: 50%;
   transform: translateX(-50%);
   width: 70px;
@@ -220,7 +238,6 @@ header img {
   color: #6b6b7a;
 }
 
-/* Vertical line above */
 .step-marker::before {
   content: "";
   position: absolute;
@@ -231,8 +248,6 @@ header img {
   height: 120px;
   background: #dcdcdc;
 }
-
-/* Section content */
 
 .content {
   display: flex;
@@ -246,27 +261,37 @@ header img {
   position: relative;
   font-size: 2rem;
   font-weight: 700;
-  max-width: 300px;
+  width: 300px;
 }
 
 .content p {
   position: relative;
-  font-size: 18px;
+  font-size: 1.3rem;
   max-width: 500px;
 }
 
 .content button {
   position: relative;
-  background: #b84bf6;
+  background: var(--purple-600);
   border: none;
   padding: 15px 40px;
   border-radius: 30px;
   color: white;
   font-size: 18px;
   cursor: pointer;
+  font-weight: 600;
 }
 
-@media (min-width: 768) and (max-width: 1100px) {
+.content button small {
+  color: var(--purple-300);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.content button:hover {
+  background-color: var(--purple-300f);
+}
+@media (min-width: 768px) and (max-width: 1200px) {
   .hero-center {
     display: block;
   }
@@ -276,8 +301,11 @@ header img {
   .btn {
     flex-direction: row;
   }
+  .content h2 {
+    width: 500px;
+  }
 }
-@media (min-width: 1100px) {
+@media (min-width: 1200px) {
   .hero-center {
     display: none;
   }
@@ -303,6 +331,6 @@ header img {
     flex-direction: row;
   }
   .content h2 {
-    max-width: 230px;
+    width: 300px;
   }
 }

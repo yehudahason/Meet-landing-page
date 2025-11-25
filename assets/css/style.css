@@ -288,7 +288,7 @@ header img {
   position: relative;
   font-size: 2.5rem;
   font-weight: 800;
-  width: 300px;
+  width: 500px;
   line-height: 110%;
 }
 
@@ -299,6 +299,7 @@ header img {
   line-height: 110%;
   padding: 0.5rem;
   font-weight: 400;
+  text-align: left;
 }
 
 .content button {
@@ -333,7 +334,7 @@ header img {
     flex-direction: row;
   }
   .content h2 {
-    width: 500px;
+    width: 600px;
   }
 }
 @media (min-width: 1280px) {
@@ -363,6 +364,7 @@ header img {
     align-items: center;
   }
   .content h2 {
-    width: 300px;
+    width: 350px;
+    text-align: left;
   }
 }

@@ -225,7 +225,7 @@ header img {
   margin-top: 11rem;
   position: relative;
   width: 100vw;
-  min-height: 460px;
+  min-height: 400px;
   background-image: url("../../assets/desktop/image-footer.jpg");
   background-repeat: no-repeat;
   background-size: cover;

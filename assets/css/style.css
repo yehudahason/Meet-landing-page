@@ -138,6 +138,7 @@ header img {
 }
 
 .section-2 {
+  margin-top: 3rem;
   padding-top: 3.5rem;
   display: flex;
   justify-content: space-around;
@@ -223,7 +224,7 @@ header img {
 }
 
 .section-3 {
-  margin-top: 6.5rem;
+  margin-top: 11rem;
   position: relative;
   width: 100vw;
   min-height: 460px;

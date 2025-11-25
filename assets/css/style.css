@@ -146,7 +146,6 @@ header img {
   flex-direction: column;
   min-height: 883px;
   gap: 1rem;
-  height: 915px;
 }
 
 .section-2 h3 {
@@ -335,15 +334,6 @@ header img {
   .content h2 {
     width: 500px;
   }
-  .section-one {
-    height: 761px;
-  }
-  .section-2 {
-    height: 759px;
-  }
-  .section-3 {
-    height: 400px;
-  }
 }
 @media (min-width: 1280px) {
   .hero-center {
@@ -373,12 +363,5 @@ header img {
   }
   .content h2 {
     width: 300px;
-  }
-  .section-2 {
-    height: 683px;
-    padding-top: 0;
-  }
-  .section-3 {
-    height: 400px;
   }
 }

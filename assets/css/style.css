@@ -62,7 +62,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 6rem;
+  padding: 2rem;
   min-height: auto;
 }
 
@@ -118,7 +118,7 @@ header img {
   justify-content: space-around;
   align-items: center;
   gap: 0.8rem;
-  min-height: 640px;
+  height: 640px;
 }
 
 .btn {
@@ -357,6 +357,8 @@ header img {
   .section-one {
     flex-direction: row;
     justify-content: space-between;
+    height: 438px;
+    align-items: center;
   }
 
   .gallery {
@@ -373,12 +375,8 @@ header img {
   .content h2 {
     width: 300px;
   }
-  .section-one {
-    height: 438px;
-    align-items: center;
-  }
   .section-2 {
-    height: 883px;
+    height: 683px;
     padding-top: 0;
   }
   .section-3 {
